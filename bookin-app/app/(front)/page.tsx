@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <section className="max-w-fit mx-auto">
+    <section className="">
       <Hero/>
     </section>
   );
