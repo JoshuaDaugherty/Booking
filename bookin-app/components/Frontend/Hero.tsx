@@ -19,7 +19,7 @@ const Hero = () => {
                   <span>Appointment now</span>
                 </h1>
                 <p className="mb-8 max-w-[480px] text-base text-gray-100 dark:text-gray-50-6">
-                We believe that simple jobs shouldn't be complicated. That's why we're committed to providing clear, affordable, and transparent services that make your life easier
+                We believe that simple jobs shouldnt be complicated. Thats why we are committed to providing clear, affordable, and transparent services that make your life easier
                 </p>
                 <SearchBar/>
                 <ul className="flex flex-wrap items-center mt-6">
