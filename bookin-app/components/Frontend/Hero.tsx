@@ -1,7 +1,11 @@
 import React from "react";
 import SearchBar from "./SearchBar";
+import TransitionalText from "./TransitionalText";
 
 const Hero = () => {
+
+  const TEXTS = ['Wood Working', 'Plumbing' , 'Simple Carpentry', 'Heating & Cooling']
+
   return (
     <div className="bg-blue-950">
       <div className="relative  pb-[110px] pt-[50px] dark:bg-dark lg:pt-[50px] max-w-6xl mx-auto">
@@ -9,13 +13,13 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-5/12">
               <div className="hero-content">
-                <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-gray-50 dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
-                  Kickstart Startup Website with TailGrids
+                <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-gray-50 dark:text-white sm:text-[42px] lg:text-[40px] xl:text-4xl flex flex-wrap items-center gap-3">
+                  <span>Book your</span> <TransitionalText className="text-blue-500" TEXTS={TEXTS}/>
+                  <br/>
+                  <span>Appointment now</span>
                 </h1>
                 <p className="mb-8 max-w-[480px] text-base text-gray-100 dark:text-gray-50-6">
-                  With TailGrids, business and students thrive together.
-                  Business can perfectly match their staffing to changing demand
-                  throughout the dayed.
+                We believe that simple jobs shouldn't be complicated. That's why we're committed to providing clear, affordable, and transparent services that make your life easier
                 </p>
                 <SearchBar/>
                 <ul className="flex flex-wrap items-center mt-6">
@@ -24,7 +28,7 @@ const Hero = () => {
                       href="#"
                       className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-center text-base font-medium text-white hover:bg-blue-700 lg:px-7"
                     >
-                      Get Started
+                      Schedule Appointment
                     </a>
                   </li>
                   <li>
@@ -33,35 +37,13 @@ const Hero = () => {
                       className="inline-flex items-center justify-center px-5 py-3 text-center text-base font-medium text-gray-50 hover:text-blue-500 dark:text-white"
                     >
                       <span className="mr-2">
-                        <svg
-                          width="24"
-                          height="25"
-                          viewBox="0 0 24 25"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle cx="12" cy="12.6152" r="12" fill="#3758F9" />
-                          <rect
-                            x="7.99893"
-                            y="14.979"
-                            width="8.18182"
-                            height="1.63636"
-                            fill="white"
-                          />
-                          <rect
-                            x="11.2717"
-                            y="7.61523"
-                            width="1.63636"
-                            height="4.09091"
-                            fill="white"
-                          />
-                          <path
-                            d="M12.0898 14.1606L14.9241 11.0925H9.25557L12.0898 14.1606Z"
-                            fill="white"
-                          />
-                        </svg>
+                        
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 flex-shrink-0 h-5 w-4 text-blue-600">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+</svg>
+
                       </span>
-                      Download App
+                      Buy Product
                     </a>
                   </li>
                 </ul>
