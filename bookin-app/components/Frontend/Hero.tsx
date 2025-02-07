@@ -4,7 +4,7 @@ import TransitionalText from "./TransitionalText";
 
 const Hero = () => {
 
-  const TEXTS = ['Wood Working', 'Plumbing' , 'Simple Carpentry', 'Heating & Cooling']
+  const TEXTS = ['Hvac', 'Plumbing' , 'Electrical']
 
   return (
     <div className="bg-blue-950">
@@ -47,7 +47,20 @@ const Hero = () => {
                     </a>
                   </li>
                 </ul>
-               
+                <div className="py-4 flex pt-8 gap-4">
+                  <div className=" flex flex-col items-center">
+                    <span className="font-bold text-gray-50">
+                      300
+                    </span>
+                    <span className="text-sm text-gray-400">Active clients</span>
+                  </div>
+                  <div className=" flex flex-col items-center">
+                    <span className="font-bold text-gray-50">
+                      500
+                    </span>
+                    <span className="text-sm text-gray-400">Viewers</span>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="hidden px-4 lg:block lg:w-1/12"></div>
