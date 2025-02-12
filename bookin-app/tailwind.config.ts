@@ -6,6 +6,7 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+		'node_modules/flowbite-react/lib/esm/**/*.js'
   ],
   theme: {
   	extend: {
@@ -58,5 +59,5 @@ export default {
   		}
   	}
   },
-  plugins: [require('@tailwindcss/forms'), require("tailwindcss-animate")],
+  plugins: [require("@tailwindcss/forms"), require("tailwindcss-animate"), require('flowbite/plugin')],
 } satisfies Config;

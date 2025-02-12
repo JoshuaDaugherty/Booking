@@ -1,11 +1,15 @@
+import Brands from '@/components/Frontend/Brands';
 import Hero from '@/components/Frontend/Hero';
+import TabbedSection from '@/components/Frontend/TabbedSection';
 import React from 'react';
 
 export default function Home() {
   return (
     <section className="">
       
-      <Hero/>
+      <Hero/> 
+      <Brands/>
+      <TabbedSection/>
     </section>
   );
 }
