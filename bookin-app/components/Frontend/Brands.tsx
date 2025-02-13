@@ -1,9 +1,16 @@
 import React from "react";
 
 
+export type Brand = {
+  imageSrc: string;
+  lightImageSrc: string;
+  altText: string;
+  link: string;
+};
+
 export type SingleImageProps = {
- brand:any
-}
+  brand: Brand;
+};
 const brandsData = [
   {
     imageSrc:
