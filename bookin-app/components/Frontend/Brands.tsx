@@ -2,7 +2,7 @@ import React from "react";
 
 
 export type SingleImageProps = {
- brand: any
+ brand:any
 }
 const brandsData = [
   {
