@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react'
+import Availability from './Availability'
 
 export default function TechDetails() {
   const [isActive,setIsActive] = useState('availability')
@@ -13,7 +14,7 @@ export default function TechDetails() {
       <div className="py-8 px-6">
         {isActive==="availability"?(
           <div>
-             Availability Details
+            <Availability/>
           </div>
         ):
         (
