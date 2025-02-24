@@ -89,7 +89,7 @@ export default function Navbar() {
               label={
                 <Avatar
                   alt="User settings"
-                  img="#"
+                  img="/BlackmanHVAC.jpg"
                   
                   rounded
                 />

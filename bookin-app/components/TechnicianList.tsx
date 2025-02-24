@@ -10,7 +10,7 @@ export default function TechnicianList({title="Service Technician"}:{title?:stri
       <div className="max-w-6xl mx-auto">
       <SectionHeading title={title}/>
       <div className="py-4 flex items-center justify-between">
-        <Link href="" className="text-sm flex items-center text-blue-700 font-semibold">
+        <Link href="#" className="text-sm flex items-center text-blue-700 font-semibold">
         <Map className="mr-2 flex-shrink-0 w-4 h-4"/>
           <span>Map View</span>
         </Link>

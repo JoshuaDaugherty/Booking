@@ -34,7 +34,7 @@ export default function ServiceCard() {
       <p className="py-3">Saint Louis MO, 63031</p>
       <div className="flex items-center gap-4 py-4">
         <div className="relative">
-        <Image src="" width={243} height={207} alt="Technician" className="w-24 h-24 rounded-full object-cover" />
+        <Image src="/BlackmanHVAC.jpg" width={243} height={207} alt="Technician" className="w-24 h-24 rounded-full object-cover" />
         <p className="absolute bottom-0 right-2 bg-blue-200 w-10 h-10 flex items-center justify-center rounded-full text-blue-700">
           <Phone className="w-6 h-6"/>
         </p>
