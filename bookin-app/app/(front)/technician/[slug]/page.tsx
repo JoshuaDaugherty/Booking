@@ -20,7 +20,7 @@ export default function page() {
           
           <div className="py-3"><p>Saint Louis, MO, 63031</p></div>
             </div>
-              <Image src="" width={243} height={207} alt="Technician" className="w-36 h-36 rounded-full object-cover" />
+              <Image src="/BlackmanHVAC.jpg" width={243} height={207} alt="Technician" className="w-36 h-36 rounded-full object-cover" />
           </div>
           
         </div>
