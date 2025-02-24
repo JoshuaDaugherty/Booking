@@ -15,27 +15,27 @@ export default function LinkCards({className}:{className?:string}) {
     </Link>
 
     <Link href="#" className={`rounded-md py-3 flex gap-4 bg-slate-800 text-slate-50 ${className}`}>
-      <h2>Dirty air filters</h2>
+      <h2>Refrigerant leaks</h2>
       <span aria-hidden="true">&rarr;</span>
     </Link>
 
     <Link href="#" className={`rounded-md py-3 flex gap-4 bg-slate-800 text-slate-50 ${className}`}>
-      <h2>Dirty air filters</h2>
+      <h2>Thermostat issues</h2>
       <span aria-hidden="true">&rarr;</span>
     </Link>
 
     <Link href="#" className={`rounded-md py-3 flex gap-4 bg-slate-800 text-slate-50 ${className}`}>
-      <h2>Dirty air filters</h2>
+      <h2>Leaky pipes</h2>
       <span aria-hidden="true">&rarr;</span>
     </Link>
 
     <Link href="#" className={`rounded-md py-3 flex gap-4 bg-slate-800 text-slate-50 ${className}`}>
-      <h2>Dirty air filters</h2>
+      <h2>Inadequate venting</h2>
       <span aria-hidden="true">&rarr;</span>
     </Link>
 
     <Link href="#" className={`rounded-md py-3 flex gap-4 bg-slate-800 text-slate-50 ${className}`}>
-      <h2>Dirty air filters</h2>
+      <h2>Dripping faucets</h2>
       <span aria-hidden="true">&rarr;</span>
     </Link>
    </div>

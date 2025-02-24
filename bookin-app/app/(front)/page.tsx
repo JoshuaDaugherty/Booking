@@ -1,6 +1,7 @@
 import Brands from '@/components/Frontend/Brands';
 import Hero from '@/components/Frontend/Hero';
 import TabbedSection from '@/components/Frontend/TabbedSection';
+import TechnicianList from '@/components/TechnicianList';
 import React from 'react';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero/> 
       <Brands/>
       <TabbedSection/>
+      <TechnicianList/>
     </section>
   );
 }

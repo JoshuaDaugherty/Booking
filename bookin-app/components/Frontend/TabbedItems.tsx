@@ -36,13 +36,8 @@ export default function TabbedItems() {
             image: "/BlackmanHVAC.jpg",
             slug: "electrical wiring"
             
-            },
-            {
-              title: "Lightning repairs",
-              image: "/BlackmanHVAC.jpg",
-              slug: "lightning repairs"
-              
-              },
+            }
+           
 
   ]
   const tabs = [
