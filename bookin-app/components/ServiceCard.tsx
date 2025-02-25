@@ -52,7 +52,7 @@ export default function ServiceCard() {
       </div>
       </Link>
       <div className="pt-6 border-t border-gray-400">
-        <h3 className="flex gap-4 justify-between items-center"><span className="text-gray-600">Wedns, February 19</span> <span className="font-bold">$25</span>
+        <h3 className="flex gap-4 justify-between items-center"><span className="text-gray-600">Monday, February 19</span> <span className="font-bold">$25</span>
        
           </h3>
           <div className="py-3 grid grid-cols-3 gap-4">
