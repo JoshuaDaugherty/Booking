@@ -7,7 +7,7 @@ import { LoginInputsProps } from "@/types/types";
 import SubmitButton from "../FormInputs/SubmitButton";
 
 export default function LoginForm() {
-   const [isLoading, setIsLoading] = useState(false)
+   const [isLoading] = useState(false)
     const {
       register,
       handleSubmit,
