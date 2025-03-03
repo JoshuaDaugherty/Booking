@@ -8,7 +8,6 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { Loader } from "lucide-react";
 // import { updateUserById } from "@/actions/users";
 import { Button } from "@/components/ui/button";
 import {
@@ -41,6 +40,7 @@ export default function VerifyTokenForm({
   userToken: number | undefined;
   id: string;
 }) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [loading, setLoading] = useState(false);
   const [showNotification, setShowNotification] = useState(false);
   const router = useRouter();
