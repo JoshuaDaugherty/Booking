@@ -4,9 +4,9 @@
 import { getUserById } from "@/actions/users";
 import VerifyTokenForm from "@/components/Frontend/VerifyTokenForm";
 export default async function VerifyAccount({
-  params: { id },
+  params: { id }
 }: {
-  params: { id: string };
+  params: { id: string }
 }) {
   //Get a User from db
   const user = await getUserById(id);
