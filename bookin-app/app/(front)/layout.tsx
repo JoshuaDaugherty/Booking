@@ -12,7 +12,7 @@ export default function Layout({children}:{children:ReactNode}) {
         <MegaMenu/>
       </div> */}
       
-      <div className="mt-[80px]">
+      <div className="mt-[60px]">
       {children}
       </div>
     </div>
