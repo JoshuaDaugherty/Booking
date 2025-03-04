@@ -33,6 +33,7 @@ export default function RegisterForm({role = "USER"}:{role?:UserRole}) {
         setIsLoading(false);
         toast.success("User Created Successfully");
         console.log(user.data)
+        
       } 
       else{
         console.log(user.error)
