@@ -9,11 +9,11 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 // import { updateUserById } from "@/actions/users";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
+  // FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -26,6 +26,7 @@ import {
   InputOTPSlot,
 } from "@/components/ui/input-otp";
 import { updateUserById } from "@/actions/users";
+import SubmitButton from "../FormInputs/SubmitButton";
  
 const FormSchema = z.object({
   token: z.string().min(6, {
@@ -104,15 +105,15 @@ export default function VerifyTokenForm({
                   </InputOTPGroup>
                 </InputOTP>
               </FormControl>
-              <FormDescription>
+              {/* <FormDescription>
                 Please enter the 6-figure pass code sent to your email.
-              </FormDescription>
+              </FormDescription> */}
               <FormMessage />
             </FormItem>
           )}
         />
  
-        <Button type="submit">Submit</Button>
+        <SubmitButton  title="Submit to Verify" isLoading={loading} loadingTitle="Verifying your account in please wait..."/>
       </form>
     </Form>
   );

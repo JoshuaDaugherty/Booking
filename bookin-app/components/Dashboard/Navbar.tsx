@@ -2,7 +2,7 @@
 import Link from "next/link"
 import {
   
-  CircleUser,
+  // CircleUser,
   Home,
   LineChart,
   Menu,
@@ -36,12 +36,17 @@ import React from "react";
 
 import { useRouter } from "next/navigation";
 import ModeToggle from "../ModeToggle";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { signOut } from "next-auth/react";
+import { Session } from "next-auth";
  
-export default function Navbar() {
+export default function Navbar({session}:{session:Session}) {
+  const user = session.user
   const router = useRouter();
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   async function handleLogout() {
-    router.push("/");
+    await signOut()
+    router.push("/login");
   }
   return (
     <header className="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[50px] lg:px-6">
@@ -137,18 +142,21 @@ export default function Navbar() {
           <ModeToggle/>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="secondary" size="icon" className="rounded-full">
-                <CircleUser className="h-5 w-5" />
-                <span className="sr-only">Toggle user menu</span>
-              </Button>
+            <Avatar className="cursor-pointer">
+              {user.image?<AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />:(
+              <AvatarFallback>CN</AvatarFallback>)}
+              
+                
+           </Avatar>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuLabel className="text-center">{user.name}</DropdownMenuLabel>
+              <DropdownMenuLabel className="text-center font-light text-sm text-slate-500">{user.email}</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem>Settings</DropdownMenuItem>
               <DropdownMenuItem>Support</DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>Logout</DropdownMenuItem>
+              <DropdownMenuItem onClick={()=> handleLogout()}>Logout</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </header>

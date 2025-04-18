@@ -1,6 +1,7 @@
 import React from "react";
-import SearchBar from "./SearchBar";
+
 import TransitionalText from "./TransitionalText";
+import { CommandMenu } from "../command-menu";
 
 const Hero = () => {
 
@@ -21,7 +22,9 @@ const Hero = () => {
                 <p className="mb-8 max-w-[480px] text-base text-gray-100 dark:text-gray-50-6">
                 We believe that simple jobs shouldnt be complicated. Thats why we are committed to providing clear, affordable, and transparent services that make your life easier
                 </p>
-                <SearchBar/>
+                <div className="w-full flex-1 md:flex-none">
+                  <CommandMenu/>
+                </div>
                 <ul className="flex flex-wrap items-center mt-6">
                   <li>
                     <a
