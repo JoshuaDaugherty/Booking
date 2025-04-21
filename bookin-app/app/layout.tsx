@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
 import { ThemeProvider } from "@/components/theme-provider"
 import { siteConfig } from "@/config/site";
 
 
-const outfit = Outfit({ subsets: ["latin"]});
+const inter = Inter({ subsets: ["latin"]});
 
 export const metadata: Metadata = {
   title: {
@@ -68,7 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={outfit.className}>
+        className={inter.className}>
         <Providers>
         <ThemeProvider
             attribute="class"

@@ -46,8 +46,8 @@ const brandsData = [
 
 export default function Brands() {
   return (
-    <section className="bg-slate-100 py-10 lg:py-[60px] dark:bg-dark">
-      <h2 className="text-center pb-6">Trusted By</h2>
+    <section className="bg-slate-100 text-slate-800  py-10 lg:py-[60px]">
+      <h2 className="text-center pb-6 scroll-m-20 text-2xl font-semibold tracking-tight ">Trusted By</h2>
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
@@ -64,19 +64,19 @@ export default function Brands() {
 }
 
 const SingleImage = ({ brand }:SingleImageProps) => {
-  const { link, imageSrc, lightImageSrc, altText } = brand;
+  const { link, imageSrc, altText } = brand;
   return (
     <>
       <a
         href={link}
         className="mx-4 flex w-[150px] items-center justify-center py-5 2xl:w-[180px]"
       >
-        <img src={imageSrc} alt={altText} className="h-10 w-full dark:hidden" />
-        <img
+        <img src={imageSrc} alt={altText} className="h-10 w-full dark:text-slate-800" />
+        {/* <img
           src={ lightImageSrc }
           alt={altText}
           className="hidden h-10 w-full dark:block"
-        />
+        /> */}
       </a>
     </>
   );

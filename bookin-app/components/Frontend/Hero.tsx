@@ -8,7 +8,7 @@ const Hero = () => {
   const TEXTS = ['Hvac', 'Plumbing' , 'Electrical']
 
   return (
-    <div className="bg-blue-950">
+    <div className="bg-blue-950 dark:bg-slate-950">
       <div className="relative  pb-[110px] pt-[50px] dark:bg-dark lg:pt-[50px] max-w-6xl mx-auto">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
