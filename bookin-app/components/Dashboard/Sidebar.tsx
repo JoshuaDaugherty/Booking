@@ -1,6 +1,6 @@
 "use client"
 import 
-{  Bell, Folder, Grid2X2, Home, LineChart, Package2, Settings, Users } from "lucide-react";
+{  Bell, Folder, Globe, Grid2X2, Home, LineChart, Package2, Settings, Users } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { Button } from "@/components/ui/button";
@@ -40,6 +40,11 @@ export default  function Sidebar() {
       name: "Settings",
       path: "/Dashboard/settings",
       icon: Settings
+    },
+    {
+      name: "Online",
+      path: "/",
+      icon: Globe
     }
    
   ]

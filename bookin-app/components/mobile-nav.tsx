@@ -16,6 +16,7 @@ import {
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false)
+  
   const { updateMetaColor, metaColor } = useMetaColor()
 
   const onOpenChange = React.useCallback(
